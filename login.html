@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Assignment</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<style>
+input[type=text],input[type=password]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input:hover{border: 1px solid black;}
+input[type=submit],input[type=reset] {
+background-color:grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius : 5px;	
+}
+input[type=submit]:hover,input[type=reset]:hover {
+background-color:#1f1f2e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;    
+}
+.login {
+
+border-radius : 20px;
+padding-left : 60px;
+margin-right : 50px;
+padding-top : 5%;
+padding-bottom : 11%;
+
+}
+
+</style>
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="login.html">Login</a></h1>
+    </div>
+    <nav>
+      <ul>
+	    <li><a href="index.html">Home</a></li>
+        <li class="last"><a href="register.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <div class="login">
+	<form id="login-form">
+	<p><b>User Name</b></br>
+				<input type="text" name="uname" placeholder="Enter your User name" required/></p>
+
+			<p><b>Password</b></br>
+				<input type="password" name="pass" placeholder="Enter your password" required/></p>
+				<p><input id="rememberme" name="rememberme" value="remember" type="checkbox" /> &nbsp;Remember me </p>
+				<p><input type="submit" name="submit" id="sub" value="Login"/><span><input type="reset" name="reset" id="res" value="Cancel"/></p></span>
+	</form>
+	</div>
+  </div>
+</div>
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Manvitha</a></p>
+    <p class="fl_right"><a href="#">Tech Mahindra</a></p>
+  </footer>
+</div>
+</body>
+</html>
